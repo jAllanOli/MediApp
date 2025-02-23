@@ -1,8 +1,8 @@
 import express from "express";
-import appointmentController from "./AppointmentController";
-import doctorController from "./DoctorController";
-import patientController from "./PatientController";
-import prescriptionController from "./PrescriptionController";
+import appointmentController from "./AppointmentController.js";
+import doctorController from "./DoctorController.js";
+import patientController from "./PatientController.js";
+import prescriptionController from "./PrescriptionController.js";
 
 let router = express.Router();
 
