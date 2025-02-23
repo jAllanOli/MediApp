@@ -31,7 +31,7 @@ const savePrescription = async ({
       dosage,
       instructions,
     });
-    return await Prescription.save();
+    return await prescription.save();
   } catch (error) {
     throw new Error(error);
   }

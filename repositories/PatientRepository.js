@@ -19,7 +19,7 @@ const getPatient = async (id) => {
 const savePatient = async ({ name, birthDate, email, phone }) => {
   try {
     const patient = new Patient({ name, birthDate, email, phone });
-    return await Patient.save();
+    return await patient.save();
   } catch (error) {
     throw new Error(error);
   }
