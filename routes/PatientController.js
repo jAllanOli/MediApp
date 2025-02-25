@@ -60,8 +60,8 @@ router.put("/patients/:id", async (req, res) => {
 router.delete("/patients/:id", async (req, res) => {
   const { id } = req.params;
   try {
-    const patient = await PatientService.deletePatient(id);
-    res.send(patient);
+    await PatientService.deletePatient(id);
+    res.send("Patient deleted");
   } catch (error) {
     console.error(error);
     res.status(500).send(error);
