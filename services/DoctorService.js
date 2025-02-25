@@ -28,7 +28,7 @@ const saveDoctor = async ({
   });
 };
 
-const udateDoctor = async (
+const updateDoctor = async (
   id,
   { name, login, password, email, phone, medicalSpecialty, medicalRegistration }
 ) => {
@@ -51,7 +51,7 @@ const doctorService = {
   getAllDoctors,
   getDoctor,
   saveDoctor,
-  udateDoctor,
+  updateDoctor,
   deleteDoctor,
 };
 
